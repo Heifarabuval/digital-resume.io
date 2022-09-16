@@ -1,0 +1,365 @@
+<!--  About me modal  -->
+<div onclick="openModal('about-me',false)"
+     class="h-max w-auto window min-w-fit hidden fixed bg-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="about-me-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">About me</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="window-body bg-black">
+        <pre>
+
+
+
+
+            Hi I'm Heifara a French student from Martinique, I arrived in Lille a decade ago.
+Two years ago, I started retraining, so I threw away my knives and grabbed my laptop to apply to Epitech school.
+
+After months of hard work, we were able to find an internship. I tried to be myself during the job interviews to find an enterprise which looks like me, and this is where the adventure started with Adfinitas!
+
+
+
+        </pre>
+    </div>
+</div>
+
+<!--  Hobbies modal  -->
+<div onclick="openModal('hobbies',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="hobbies-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">Hobbies</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="bg-black window-body mt-8 border-box flex flex-col justify-between">
+        <div id="hobbies-container" class="flex justify-evenly items-center">
+            <i class="flex flex-col justify-evenly mx-auto">
+                <img class="mx-auto h-co" src="./public/assets/images/en-chantant.png">
+                <span><small class="text-white mx-auto">Rap music</small></span>
+            </i>
+
+            <i class="flex flex-col justify-evenly mx-auto">
+                <img class="mx-auto h-co" src="./public/assets/images/equipement-de-surf.png">
+                <span><small class="text-white mx-auto">Surf</small></span>
+            </i>
+            <i class="flex flex-col justify-evenly mx-auto">
+                <img class="mx-auto h-co" src="./public/assets/images/workout.png">
+                <span><small class="text-white mx-auto">Workout</small></span>
+            </i>
+        </div>
+    </div>
+</div>
+
+<!--  Tool modal  -->
+<div onclick="openModal('tools',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="tools-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">Stack</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="window-body">
+        <menu role="tablist">
+            <button aria-selected="true" aria-controls="languages">Languages</button>
+            <button aria-controls="frameworks" aria-selected="false">Frameworks</button>
+            <button aria-controls="tools" aria-selected="false">Tools</button>
+        </menu>
+        <article class="h-max mt-5" role="tabpanel" id="languages">
+            <table>
+                <tr>
+                    <th>Languages</th>
+                    <th class="flex justify-center">Affinity</th>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Golang</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Css</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i> <i><img
+                            src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+
+            </table>
+        </article>
+
+        <article class="mt-5 h-max" role="tabpanel" id="frameworks" hidden="true">
+            <table>
+                <tr>
+                    <th>Frameworks</th>
+                    <th class="flex justify-center">Affinity</th>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gogin</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tailwind</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+
+            </table>
+        </article>
+
+        <article class="mt-5 h-max" role="tabpanel" id="tools" hidden="true">
+            <table>
+                <tr>
+                    <th>Tools</th>
+                    <th class="flex justify-center">Affinity</th>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i> <i><img
+                            src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EsLint</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trello</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jetbrain suite</td>
+                    <td class="flex justify-center">
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/star.png"></i>
+                        <i><img src="./public/assets/images/staremp.png"></i>
+                    </td>
+                </tr>
+
+            </table>
+        </article>
+    </div>
+</div>
+
+<!--  Print modal  -->
+<div onclick="openModal('print-cv',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="print-cv-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">Print my resume</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="window-body flex flex-col text-center">
+        <img onclick="window.print()" class="w-full h-auto cursor-pointer" src="/public/assets/images/753-printer.gif"
+             alt="printer anim"/>
+        <embed class="p-6" src="/public/assets/cv.pdf" type="application/pdf"/>
+    </div>
+</div>
+
+<!--  Social modal  -->
+<div onclick="openModal('social',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="social-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">Social</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="window-body mt-8 border-box flex flex-col justify-between">
+        <div id="social-container" class="flex justify-evenly items-center">
+            <a class="basis-10" target="_blank" href="https://github.com/Heifarabuval">
+                <i>
+                    <img class="mx-auto" height="20px" width="40px" src="./public/assets/images/github.png">
+                </i>
+                <span><small class="text-black	">Github</small></span>
+            </a>
+
+            <a class="basis-10" target="_blank" href="https://www.linkedin.com/in/heifara-buval/">
+                <i>
+                    <img class="mx-auto" height="20px" width="40px" src="./public/assets/images/linkedin.png">
+                </i>
+                <span><small class="text-black">LinkedIn</small></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--  Contact me modal  -->
+<div onclick="openModal('contact-me',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container"
+     id="contact-me-modal">
+    <div class="title-bar">
+        <div class="title-bar-text">Contact me</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <form class="window-body h-5/6 flex flex-col justify-between p-3 my-auto">
+        <div>
+            <div class="field-row-stacked mx-auto">
+                <label for="email">Email</label>
+                <input id="email" type="text"/>
+            </div>
+            <div class="field-row-stacked mx-auto">
+                <label for="lastname">Lastname</label>
+                <input id="lastname" type="text"/>
+            </div>
+            <div class="field-row-stacked mx-auto">
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text"/>
+            </div>
+            <div class="field-row-stacked mx-auto">
+                <label for="message">Additional notes</label>
+                <textarea id="message"></textarea>
+            </div>
+        </div>
+        <div class="field-row-stacked mx-auto align-bottom my-4">
+            <button>Send</button>
+        </div>
+    </form>
+</div>
+
+<!--  Projects modal  -->
+<div onclick="openModal('projects',false)"
+     class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+     id="projects-modal" style="width: 40%">
+    <div class="title-bar">
+        <div class="title-bar-text">Projects</div>
+        <div class="title-bar-controls">
+            <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+            <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+            <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+        </div>
+    </div>
+    <div class="window-body">
+        <section class="tabs">
+            <menu role="tablist" aria-label="Sample Tabs">
+                <button role="tab" aria-selected="true" aria-controls="tab-A">My Quiz</button>
+                <button role="tab" aria-controls="tab-B">Css framework</button>
+                <button role="tab" aria-controls="tab-C">Mern auth</button>
+            </menu>
+            <!-- the tab content -->
+            <article role="tabpanel" id="tab-A" class="text-center">
+                <a class="cursor-pointer mx-auto" href="https://github.com/Heifarabuval/MyQuiz" target="_blank">
+                    <img class="proj-img mx-auto" src="public/assets/images/carbon.png">
+                </a>
+                <p class="mt-10">One week to discover Symfony framework by creating a quiz website </p>
+            </article>
+            <article role="tabpanel" hidden id="tab-B">
+                <a class="cursor-pointer mx-auto" href="https://github.com/Heifarabuval/Fake-Framework-Bootstrap"
+                   target="_blank">
+                    <img class="proj-img mx-auto" src="public/assets/images/cssframe.png">
+                </a>
+                <p class="mt-10">Fake boostrap framework. We did this project to understand how BS work</p>
+            </article>
+            <article role="tabpanel" hidden id="tab-C">
+                <a class="cursor-pointer mx-auto" href="https://github.com/Heifarabuval/MernAuth" target="_blank">
+                    <img class="proj-img mx-auto" src="public/assets/images/mern.png">
+                </a>
+                <p class="mt-10">Authentication feature implemented with MERN stack (front - back)</p>
+            </article>
+        </section>
+    </div>
+</div>

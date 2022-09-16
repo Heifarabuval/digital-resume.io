@@ -1,34 +1,69 @@
-<div class="container mx-auto">
-    <div class="grid grid-rows-2 grid-flow-col ">
-
-        <div class="window col-2" style="width: 300px">
-            <div class="title-bar">
-                <div class="title-bar-text">A Window With Stuff In It</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button>
-                </div>
+<div class="container flex flex-col justify-between h-full w-full p-4 inline-flex ">
+    <div class="grid grid-cols-2 gap-4 place-content-evenly">
+        <i>
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="about-me" onclick="openModal(this.id, event)"
+                     class="fw-12 float-left object-contain  hover:animate-bounce"
+                     src="public/assets/images/Win%20XP%20icons/24.ico" alt="">
+                <p><small>About me</small></p>
             </div>
-            <div class="window-body">
-                <p>There's so much room for activities!</p>
+        </i>
+        <i class="justify-end">
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="hobbies" onclick="openModal(this.id, event)" class="w-12 hover:animate-bounce"
+                     src="public/assets/images/Win%20XP%20icons/44.ico" alt="">
+                <p><small>Hobbies</small></p>
             </div>
-        </div>
-
-
-        <div class="window col-2" style="width: 300px">
-            <div class="title-bar">
-                <div class="title-bar-text">A Window With Stuff In It</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body">
-                <p>There's so much room for activities!</p>
-            </div>
-        </div>
+        </i>
     </div>
+
+    <div class="grid grid-cols-3 gap-4 bg-regal-blue">
+        <i>
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="tools" onclick="openModal(this.id, event)" class="w-12 float-left hover:animate-bounce"
+                     src="public/assets/images/Win%20XP%20icons/36.ico" alt="">
+                <p><small>Stack</small></p>
+            </div>
+        </i>
+        <i class="justify-center">
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="print-cv" onclick="openModal(this.id, event)" class="w-12 hover:animate-bounce mx-auto"
+                     src="public/assets/images/Win%20XP%20icons/17.ico" alt="">
+                <p><small>Print</small></p>
+            </div>
+        </i>
+        <i class="justify-end">
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="social" onclick="openModal(this.id, event)" class="w-12 float-right  hover:animate-bounce"
+                     src="public/assets/images/Win%20XP%20icons/14.ico" alt="">
+                <p><small>Social</small></p>
+            </div>
+        </i>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 bg-regal-blue">
+        <i>
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="contact-me" onclick="openModal(this.id, event)"
+                     class="w-12 float-left hover:animate-bounce mx-auto"
+                     src="public/assets/images/Win%20XP%20icons/239.ico" alt="">
+                <p><small>Contact me</small></p>
+            </div>
+
+        </i>
+
+        <i class="justify-end">
+            <div class="flex flex-col justify-center cursor-pointer">
+                <img id="projects" onclick="openModal(this.id, event)"
+                     class="w-12 float-left hover:animate-bounce mx-auto"
+                     src="public/assets/images/Win%20XP%20icons/4.ico" alt="">
+                <p><small>Projects</small></p>
+            </div>
+        </i>
+    </div>
+
+
+    <div id="modals"></div>
+
 
 </div>
