@@ -8,13 +8,919 @@
     <title>My digital resume </title>
     <link rel="stylesheet" href="https://unpkg.com/xp.css">
     <link rel="stylesheet" href="style.css">
-    <script defer src="scripts/Loader.js"></script>
+
+    <style>/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
+    *, ::after, ::before {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb
+    }
+
+    ::after, ::before {
+        --tw-content: ''
+    }
+
+    html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    }
+
+    body {
+        margin: 0;
+        line-height: inherit
+    }
+
+    hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: inherit;
+        font-weight: inherit
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    b, strong {
+        font-weight: bolder
+    }
+
+    code, kbd, pre, samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 1em
+    }
+
+    small {
+        font-size: 80%
+    }
+
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+
+    sub {
+        bottom: -.25em
+    }
+
+    sup {
+        top: -.5em
+    }
+
+    table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse
+    }
+
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0
+    }
+
+    button, select {
+        text-transform: none
+    }
+
+    [type=button], [type=reset], [type=submit], button {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none
+    }
+
+    :-moz-focusring {
+        outline: auto
+    }
+
+    :-moz-ui-invalid {
+        box-shadow: none
+    }
+
+    progress {
+        vertical-align: baseline
+    }
+
+    ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+        height: auto
+    }
+
+    [type=search] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px
+    }
+
+    ::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit
+    }
+
+    summary {
+        display: list-item
+    }
+
+    blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+        margin: 0
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0
+    }
+
+    legend {
+        padding: 0
+    }
+
+    menu, ol, ul {
+        list-style: none;
+        margin: 0;
+        padding: 0
+    }
+
+    textarea {
+        resize: vertical
+    }
+
+    input::placeholder, textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af
+    }
+
+    [role=button], button {
+        cursor: pointer
+    }
+
+    :disabled {
+        cursor: default
+    }
+
+    audio, canvas, embed, iframe, img, object, svg, video {
+        display: block;
+        vertical-align: middle
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto
+    }
+
+    *, ::before, ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+    }
+
+
+    ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+
+    }
+
+    .container {
+        width: 100%
+    }
+
+    @media (min-width: 640px) {
+        .container {
+            max-width: 640px
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 768px
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            max-width: 1024px
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .container {
+            max-width: 1280px
+        }
+    }
+
+    @media (min-width: 1536px) {
+        .container {
+            max-width: 1536px
+        }
+    }
+
+    .float-right {
+        float: right
+    }
+
+    .float-left {
+        float: left
+    }
+
+    .my-auto {
+        margin-top: auto;
+        margin-bottom: auto
+    }
+
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .flex {
+        display: flex
+    }
+
+    .inline-flex {
+        display: inline-flex
+    }
+
+    .grid {
+        display: grid
+    }
+
+    .hidden {
+        display: none
+    }
+
+    .h-10 {
+        height: 2.5rem
+    }
+
+    .h-full {
+        height: 100%
+    }
+
+    .w-1\/6 {
+        width: 16.666667%
+    }
+
+    .w-4\/6 {
+        width: 66.666667%
+    }
+
+    .w-full {
+        width: 100%
+    }
+
+    .w-12 {
+        width: 3rem
+    }
+
+    .basis-auto {
+        flex-basis: auto
+    }
+
+    .basis-1\/6 {
+        flex-basis: 16.666667%
+    }
+
+    .cursor-pointer {
+        cursor: pointer
+    }
+
+    .grid-cols-2 {
+        grid-template-columns:repeat(2, minmax(0, 1fr))
+    }
+
+    .grid-cols-3 {
+        grid-template-columns:repeat(3, minmax(0, 1fr))
+    }
+
+    .flex-col {
+        flex-direction: column
+    }
+
+    .place-content-evenly {
+        place-content: space-evenly
+    }
+
+    .justify-end {
+        justify-content: flex-end
+    }
+
+    .justify-center {
+        justify-content: center
+    }
+
+    .justify-between {
+        justify-content: space-between
+    }
+
+    .gap-4 {
+        gap: 1rem
+    }
+
+    .rounded-tl {
+        border-top-left-radius: 0.25rem
+    }
+
+    .rounded-tr {
+        border-top-right-radius: 0.25rem
+    }
+
+    .bg-winxp-blue {
+        --tw-bg-opacity: 1;
+        background-color: rgb(36 93 219 / var(--tw-bg-opacity))
+    }
+
+    .bg-winxp-green {
+        --tw-bg-opacity: 1;
+        background-color: rgb(55 148 59 / var(--tw-bg-opacity))
+    }
+
+    .bg-winxp-blue-light {
+        --tw-bg-opacity: 1;
+        background-color: rgb(18 155 241 / var(--tw-bg-opacity))
+    }
+
+    .object-contain {
+        object-fit: contain
+    }
+
+    .p-2 {
+        padding: 0.5rem
+    }
+
+    .p-4 {
+        padding: 1rem
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+    .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem
+    }
+
+    .font-bold {
+        font-weight: 700
+    }
+
+    .text-amber-50 {
+        --tw-text-opacity: 1;
+        color: rgb(255 251 235 / var(--tw-text-opacity))
+    }
+
+    .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1)
+        }
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1)
+        }
+    }
+
+    .hover\:animate-bounce:hover {
+        animation: bounce 1s infinite
+    }
+
+    @media (min-width: 768px) {
+        .md\:block {
+            display: block
+        }
+    }</style>
 </head>
 <body class="flex flex-col">
 <header></header>
-<main class="text-center"></main>
-<footer></footer>
+<main class="text-center">
+    <div class="container flex flex-col justify-between h-full w-full p-4 inline-flex ">
+        <div class="grid grid-cols-2 gap-4 place-content-evenly">
+            <i>
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="about-me" onclick="openModal(this.id, event)"
+                         class="fw-12 float-left object-contain  hover:animate-bounce"
+                         src="public/assets/images/Win%20XP%20icons/24.ico" alt="">
+                    <p><small>About me</small></p>
+                </div>
+            </i>
+            <i class="justify-end">
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="hobbies" onclick="openModal(this.id, event)" class="w-12 hover:animate-bounce"
+                         src="public/assets/images/Win%20XP%20icons/44.ico" alt="">
+                    <p><small>Hobbies</small></p>
+                </div>
+            </i>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 bg-regal-blue">
+            <i>
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="tools" onclick="openModal(this.id, event)" class="w-12 float-left hover:animate-bounce"
+                         src="public/assets/images/Win%20XP%20icons/36.ico" alt="">
+                    <p><small>Stack</small></p>
+                </div>
+            </i>
+            <i class="justify-center">
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="print-cv" onclick="openModal(this.id, event)" class="w-12 hover:animate-bounce mx-auto"
+                         src="public/assets/images/Win%20XP%20icons/17.ico" alt="">
+                    <p><small>Print</small></p>
+                </div>
+            </i>
+            <i class="justify-end">
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="social" onclick="openModal(this.id, event)" class="w-12 float-right  hover:animate-bounce"
+                         src="public/assets/images/Win%20XP%20icons/14.ico" alt="">
+                    <p><small>Social</small></p>
+                </div>
+            </i>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 bg-regal-blue">
+            <i>
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="contact-me" onclick="openModal(this.id, event)"
+                         class="w-12 float-left hover:animate-bounce mx-auto"
+                         src="public/assets/images/Win%20XP%20icons/239.ico" alt="">
+                    <p><small>Contact me</small></p>
+                </div>
+
+            </i>
+
+            <i class="justify-end">
+                <div class="flex flex-col justify-center cursor-pointer">
+                    <img id="projects" onclick="openModal(this.id, event)"
+                         class="w-12 float-left hover:animate-bounce mx-auto"
+                         src="public/assets/images/Win%20XP%20icons/4.ico" alt="">
+                    <p><small>Projects</small></p>
+                </div>
+            </i>
+        </div>
+
+
+        <div id="modals"><!--  About me modal  -->
+            <div onclick="openModal('about-me',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed bg-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="about-me-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">About me</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="window-body bg-black">
+        <pre>
+
+
+
+            Hi I'm Heifara a French student from Martinique, I arrived in Lille a decade ago.
+Two years ago, I started retraining, so I threw away my knives and grabbed my laptop to apply to&nbsp;Epitech school.
+
+After months&nbsp;of hard work, we were able to find an internship. I tried to be myself during the job interviews to find an enterprise which looks like me, and this is where the adventure started with Adfinitas!
+
+
+
+        </pre>
+                </div>
+            </div>
+
+            <!--  Hobbies modal  -->
+            <div onclick="openModal('hobbies',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="hobbies-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">Hobbies</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="bg-black window-body mt-8 border-box flex flex-col justify-between">
+                    <div id="hobbies-container" class="flex justify-evenly items-center">
+                        <i class="flex flex-col justify-evenly mx-auto">
+                            <img class="mx-auto h-co" src="./public/assets/images/en-chantant.png">
+                            <span><small class="text-white mx-auto">Rap music</small></span>
+                        </i>
+
+                        <i class="flex flex-col justify-evenly mx-auto">
+                            <img class="mx-auto h-co" src="./public/assets/images/equipement-de-surf.png">
+                            <span><small class="text-white mx-auto">Surf</small></span>
+                        </i>
+                        <i class="flex flex-col justify-evenly mx-auto">
+                            <img class="mx-auto h-co" src="./public/assets/images/workout.png">
+                            <span><small class="text-white mx-auto">Workout</small></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Tool modal  -->
+            <div onclick="openModal('tools',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="tools-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">Stack</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <menu role="tablist">
+                        <button aria-selected="true" aria-controls="languages">Languages</button>
+                        <button aria-controls="frameworks" aria-selected="false">Frameworks</button>
+                        <button aria-controls="tools" aria-selected="false">Tools</button>
+                    </menu>
+                    <article class="h-max mt-5" role="tabpanel" id="languages">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th>Languages</th>
+                                <th class="flex justify-center">Affinity</th>
+                            </tr>
+                            <tr>
+                                <td>Javascript</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Golang</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Css</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i> <i><img
+                                        src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </article>
+
+                    <article class="mt-5 h-max" role="tabpanel" id="frameworks" hidden="true">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th>Frameworks</th>
+                                <th class="flex justify-center">Affinity</th>
+                            </tr>
+                            <tr>
+                                <td>Express</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gogin</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tailwind</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </article>
+
+                    <article class="mt-5 h-max" role="tabpanel" id="tools" hidden="true">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th>Tools</th>F
+                                <th class="flex justify-center">Affinity</th>
+                            </tr>
+                            <tr>
+                                <td>Git</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i> <i><img
+                                        src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EsLint</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Trello</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jetbrain suite</td>
+                                <td class="flex justify-center">
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/star.png"></i>
+                                    <i><img src="./public/assets/images/staremp.png"></i>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </div>
+
+            <!--  Print modal  -->
+            <div onclick="openModal('print-cv',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="print-cv-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">Print my resume</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="window-body flex flex-col text-center">
+                    <img onclick="window.print()" class="w-full h-auto cursor-pointer"
+                         src="/public/assets/images/printer.gif" alt="printer anim">
+                    <embed class="p-6" src="/public/assets/cv.pdf" type="application/pdf">
+                </div>
+            </div>
+
+            <!--  Social modal  -->
+            <div onclick="openModal('social',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="social-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">Social</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="window-body mt-8 border-box flex flex-col justify-between">
+                    <div id="social-container" class="flex justify-evenly items-center">
+                        <a class="basis-10" target="_blank" href="https://github.com/Heifarabuval">
+                            <i>
+                                <img class="mx-auto" height="20px" width="40px" src="./public/assets/images/github.png">
+                            </i>
+                            <span><small class="text-black	">Github</small></span>
+                        </a>
+
+                        <a class="basis-10" target="_blank" href="https://www.linkedin.com/in/heifara-buval/">
+                            <i>
+                                <img class="mx-auto" height="20px" width="40px"
+                                     src="./public/assets/images/linkedin.png">
+                            </i>
+                            <span><small class="text-black">LinkedIn</small></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  Contact me modal  -->
+            <div onclick="openModal('contact-me',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container"
+                 id="contact-me-modal">
+                <div class="title-bar">
+                    <div class="title-bar-text">Contact me</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <form class="window-body h-5/6 flex flex-col justify-between p-3 my-auto">
+                    <div>
+                        <div class="field-row-stacked mx-auto">
+                            <label for="email">Email</label>
+                            <input id="email" type="text">
+                        </div>
+                        <div class="field-row-stacked mx-auto">
+                            <label for="lastname">Lastname</label>
+                            <input id="lastname" type="text">
+                        </div>
+                        <div class="field-row-stacked mx-auto">
+                            <label for="firstname">Firstname</label>
+                            <input id="firstname" type="text">
+                        </div>
+                        <div class="field-row-stacked mx-auto">
+                            <label for="message">Additional notes</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="field-row-stacked mx-auto align-bottom my-4">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--  Projects modal  -->
+            <div onclick="openModal('projects',false)"
+                 class="h-max w-auto window min-w-fit hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 id="projects-modal" style="width: 40%">
+                <div class="title-bar">
+                    <div class="title-bar-text">Projects</div>
+                    <div class="title-bar-controls">
+                        <button class="w-1" aria-label="Minimize" onclick="minimizeModal(this)"></button>
+                        <button class="w-1" aria-label="Maximize" onclick="maximizeModal(this)"></button>
+                        <button class="w-1" aria-label="Close" onclick="closeModal(this)"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <section class="tabs">
+                        <menu role="tablist" aria-label="Sample Tabs">
+                            <button role="tab" aria-selected="true" aria-controls="tab-A">My Quiz</button>
+                            <button role="tab" aria-controls="tab-B">Css framework</button>
+                            <button role="tab" aria-controls="tab-C">Mern auth</button>
+                        </menu>
+                        <!-- the tab content -->
+                        <article role="tabpanel" id="tab-A" class="text-center">
+                            <a class="cursor-pointer mx-auto" href="https://github.com/Heifarabuval/MyQuiz"
+                               target="_blank">
+                                <img class="proj-img mx-auto" src="public/assets/images/carbon.png">
+                            </a>
+                            <p class="mt-10">One week to discover Symfony framework by creating a quiz website </p>
+                        </article>
+                        <article role="tabpanel" hidden="" id="tab-B">
+                            <a class="cursor-pointer mx-auto"
+                               href="https://github.com/Heifarabuval/Fake-Framework-Bootstrap" target="_blank">
+                                <img class="proj-img mx-auto" src="public/assets/images/cssframe.png">
+                            </a>
+                            <p class="mt-10">Fake boostrap framework. We did this project to understand how BS work</p>
+                        </article>
+                        <article role="tabpanel" hidden="" id="tab-C">
+                            <a class="cursor-pointer mx-auto" href="https://github.com/Heifarabuval/MernAuth"
+                               target="_blank">
+                                <img class="proj-img mx-auto" src="public/assets/images/mern.png">
+                            </a>
+                            <p class="mt-10">Authentication feature implemented with MERN stack (front - back)</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+<footer>
+    <nav class="flex h-10">
+        <div class="w-1/6 bg-winxp-blue rounded-tl">
+            <div class="flex space-evenly text-center">
+                <svg class="p-2 my-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                     viewBox="12 -12 48 48" style=" fill:#000000;">
+                    <path fill="#03a9f4"
+                          d="M34.807,12.511l-3.488,12.077c-3.03-2.052-6.327-3.744-13.318-0.83l3.408-11.945l0.041-0.019C28.414,8.908,31.787,10.447,34.807,12.511z"></path>
+                    <path fill="#ffc107"
+                          d="M36.633,13.68l-3.447,11.943c3.028,2.069,6.383,3.718,13.365,0.805l3.324-11.643C42.76,17.24,39.66,15.731,36.633,13.68z"></path>
+                    <path fill="#ff5722"
+                          d="M35.387,10.337l3.441-11.964C35.8-3.688,32.442-5.344,25.454-2.424L22.011,9.59c2.775-1.153,4.969-1.682,6.806-1.666C31.604,7.942,33.563,9.102,35.387,10.337z"></path>
+                    <path fill="#7cb342"
+                          d="M40.643-0.369l-3.44,12.033c3.018,2.063,6.669,3.752,13.359,0.738L54,0.415C47.021,3.317,43.665,1.688,40.643-0.369z"></path>
+                </svg>
+                <span class="p-2 text-lg text-amber-50 hidden md:block">start</span>
+            </div>
+
+        </div>
+        <div class="w-4/6 basis-auto bg-winxp-green"></div>
+        <div class="w-2-6 basis-1/6 bg-winxp-blue-light rounded-tr">
+            <p id="time" class="text-white p-2 font-bold">21:59</p>
+        </div>
+    </nav>
+</footer>
+
+
+<script rel="script" src="scripts/Tabs.js"></script>
+<script defer src="scripts/Date.js"></script>
+<script defer src="scripts/Modal.js"></script>
+<script defer src="scripts/Drop.js"></script>
 </body>
 </html>
-
-<script rel="script" src="scripts/Tabs.js" ></script>
